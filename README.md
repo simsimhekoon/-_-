@@ -47,6 +47,14 @@
 <br/><br/><br/>
 
 - ```python
+  AI.myplot('Day2', 'Money', 'Place')
+  ```
+- ![plot](./image/7.png)
+- 요일(Day2)과 금액을 통한 상관관계를 표시합니다.
+
+<br/><br/><br/>
+
+- ```python
   AI.heatmap()
   ```
 - ![heatmap](./image/5.png)
