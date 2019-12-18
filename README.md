@@ -8,7 +8,7 @@
 
 - 수집 내용 : 금액, 일자, 시간, 장소 -> 문자 내역에서 수집했습니다.
 
-- ![결제데이터 수집](./images/1.png)
+- ![결제데이터 수집](./image/1.png)
 
   - 결제 문자 크롤링을 위한 어플을 이용하여 데이터를 수집, csv파일로 저장.
 
@@ -16,13 +16,13 @@
 
 - 분석 요소 추가 : 날씨, 온도
 - 위의 요소들만으로는 상관관계가 부족하다고 판단되어 추가.
-- ![날씨데이터 수집](./images/2.png)
+- ![날씨데이터 수집](./image/2.png)
 - 네이버 지도를 이용하였습니다.
 
 
 #### 2. 실습
 
-  ![실습 코드](./images/3.png)
+  ![실습 코드](./image/3.png)
 
 
 - ```python
@@ -37,14 +37,14 @@
   AI.read('output.csv')
   AI.show()
   ```
-- ![read](./images/4.png)
+- ![read](./image/4.png)
 - csv파일을 읽어오고 정보 및 5줄을 표시합니다.
 
 
 - ```python
   AI.heatmap()
   ```
-- ![heatmap](./images/5.png)
+- ![heatmap](./image/5.png)
 - heatmap을 출력합니다.
 - 데이터 양의 부족 및 적절한 요소 선정 실패로 인해 상관관계가 낮습니다.
 
@@ -55,7 +55,7 @@
   AI.run_logistic_regression(['Day2','Money'], 'Place')
   AI.run_decision_tree_classifier(['Day2','Money'], 'Place')
   ```
-- ![result](./images/6.png)
+- ![result](./image/6.png)
 - 4가지 알고리즘을 요일, 금액으로 분석하여 실행해본 결과입니다.
 - svm은 가장 인식률이 떨어집니다.
 - neighbor-classifier 역시 인식률이 떨어집니다.
